@@ -212,5 +212,9 @@ and (max-width: 400px){
         flex-direction: row;
        
     }
+    .contact-form {
+
+        width: 90%;
+    }
 
 }
