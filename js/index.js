@@ -26,7 +26,7 @@ toogle_menu_lateral.onclick=desplegar;
 
 function desplegar(){
   
-
+menu.innerHTML=""
 menu.classList.toggle('active')
 
 }
