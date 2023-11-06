@@ -19,14 +19,21 @@ var toogle_menu_lateral=document.querySelector("#toogle_menu_lateral");
 //var toogle_menu=document.querySelector("#toogle_menu");
 var button_lateral=document.querySelector("#button_lateral")
 var menu=document.querySelector("#lateral")
+var menuHead=document.querySelector("#item_menu")
 
 
 //toogle_menu.onclick= desplegar;
 toogle_menu_lateral.onclick=desplegar;
 
 function desplegar(){
+
+  var nav_lateral=document.createElement("nav")
+  nav_lateral.id="menu_lateral"
+  nav_lateral.appendChild(menuHead)
+
   
 menu.innerHTML=""
+menu.appendChild(nav_lateral)
 menu.classList.toggle('active')
 
 }
