@@ -97,7 +97,7 @@ color: gray;
 font-size: 12px;
 }
 .img_tree{
-    
+    min-width: 250px;
     width: 49%;
     height: 300px;
    
@@ -133,5 +133,28 @@ gap: 5px;
 }
 #p_footer{
 text-align: center;
+font-size: 10px;
+
+}
+
+@media only screen
+and (min-width: 120px)
+and (max-width: 856px){
+    p{
+        font-size: 15px;
+        line-height: 20px;
+        word-spacing: -1px;
+    }
+    #lateral{
+        display: none;
+    }
+    #content{
+       
+        width: 90%;
+    }
+    .container {
+        right: 0;
+        
+    }
 
 }
