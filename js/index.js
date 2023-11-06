@@ -26,7 +26,7 @@ var menuHead=document.querySelector("#item_menu")
 toogle_menu_lateral.onclick=desplegar;
 
 function desplegar(){
-
+  
   var nav_lateral=document.createElement("nav")
   nav_lateral.id="menu_lateral"
   nav_lateral.appendChild(menuHead)
@@ -34,7 +34,9 @@ function desplegar(){
   
 menu.innerHTML=""
 menu.appendChild(nav_lateral)
+toogle_menu_lateral.classList.toggle('bx-rectangle')
 menu.classList.toggle('active')
+
 
 }
 

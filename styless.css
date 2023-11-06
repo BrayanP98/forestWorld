@@ -156,7 +156,7 @@ min-width: 30px;
 
 }
 #menu_lateral{
-
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top: 80px;
     display: flex;
@@ -172,6 +172,9 @@ min-width: 30px;
 #menu_lateral li,a{
     list-style: none;
 }
+#menu_lateral a:hover{
+    color:greenyellow;
+}
 #toogle_menu_lateral{
     position: relative;
     
@@ -181,10 +184,15 @@ min-width: 30px;
     width: 1px;
    opacity: 0;
     z-index: 1000;
-    left: 8px;
+    right: 0;
     bottom: 8px;
-    transition: all .5s ease; 
+    transition: all 1s ease; 
+    color: black;
   
+  }
+  #toogle_menu_lateral.bx-rectangle{
+    transition: all 1s ease;
+    color:rgba(100, 227, 80, 0.504);
   }
 p{
     font-size: 20px;
@@ -314,14 +322,21 @@ and (max-width: 856px){
 and (min-width: 120px)
 and (max-width: 400px){
     #menu {
-        width: 100px;
+        width: 40%;
+        position: relative;
+       
+       left: 20px;
+       display: flex;
     }
     #menu ul{
         display: none;
     }
     #redes{
         flex-direction: row;
-       
+        top: 50px;
+       width: 50px;
+      position: fixed;
+      right: 2px;
     }
     .contact-form {
 
@@ -339,6 +354,12 @@ and (max-width: 400px){
     }
     #toogle_menu_lateral{
         opacity: 1;
+       
+    }
+    #button_lateral{
+        
+        position: relative;
+       
     }
     
 
