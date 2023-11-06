@@ -115,8 +115,13 @@ min-width: 30px;
     width: 25px;
     height: 25px;
     border-radius: 10px;
-
+    filter: grayscale(1);
 }
+#redes img:hover{
+    filter: grayscale(0.5);
+    transform: scale(1.1);
+}
+
 .container{
     width: 100%;
     height: fit-content;
@@ -179,6 +184,25 @@ font-size: 12px;
     height: 300px;
     transition: 1s ease-in;
    
+}
+
+@keyframes imgshow{
+
+    from{
+
+        opacity: 0;
+        scale: 25%;
+    }to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+#img,#div_media,form{
+    view-timeline-name: --revealing-image;
+    animation-name: imgshow;
+    animation-fill-mode: backwards;
+    animation-timeline: --revealing-image;
+    animation-range: entry 35% cover 40%;
 }
 footer{
 
